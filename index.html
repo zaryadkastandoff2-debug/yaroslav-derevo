@@ -83,6 +83,7 @@
   }
   .logo .dot{color:var(--honey-deep)}
   .logo svg{width:26px;height:26px;flex:none}
+  .brand{display:flex;align-items:center}
   .head-partner{
     padding-left:15px;border-left:1.5px solid rgba(87,66,44,.18);
     font-size:.7rem;font-weight:600;color:var(--ink-soft);
@@ -367,9 +368,9 @@
     .g1{grid-row:span 1;height:300px}
     .gal-grid .gal-item{height:auto;min-height:220px}
     .hero-tag{left:10px;bottom:14px}
-    .logo{font-size:1rem}
-    .head-partner{padding-left:11px;font-size:.62rem}
-    .head-partner b{font-size:.68rem}
+    .brand{flex-direction:column;align-items:flex-start;gap:3px}
+    .head-partner{padding-left:0;border-left:none;font-size:.6rem}
+    .head-partner b{display:inline;font-size:.66rem;margin-left:4px}
     .hero-btns .btn{width:100%}
     .contact-box{border-radius:22px}
     .calc-result .btn{align-self:stretch;justify-content:center}
@@ -387,11 +388,13 @@
 <!-- ================= HEADER ================= -->
 <header id="header">
   <div class="wrap head-in">
-    <a class="logo" href="#top" aria-label="Amigo Group, на початок сторінки">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#1e4032"/><path d="M16 5 L24 17 H20 L26 25 H6 L12 17 H8 Z" fill="#f3c87e"/><rect x="14.4" y="25" width="3.2" height="4" fill="#f3c87e"/></svg>
-      AMIGO<span class="dot">·</span>GROUP
-    </a>
-    <span class="head-partner">Партнер<b>SimbaBud</b></span>
+    <div class="brand">
+      <a class="logo" href="#top" aria-label="Amigo Group, на початок сторінки">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#1e4032"/><path d="M16 5 L24 17 H20 L26 25 H6 L12 17 H8 Z" fill="#f3c87e"/><rect x="14.4" y="25" width="3.2" height="4" fill="#f3c87e"/></svg>
+        AMIGO<span class="dot">·</span>GROUP
+      </a>
+      <span class="head-partner">Партнер<b>SimbaBud</b></span>
+    </div>
     <nav class="main" aria-label="Основне меню">
       <a href="#catalog">Вироби</a>
       <a href="#steps">Як замовити</a>
