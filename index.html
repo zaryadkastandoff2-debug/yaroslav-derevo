@@ -82,20 +82,12 @@
     display:flex;align-items:center;gap:8px;white-space:nowrap;
   }
   .logo .dot{color:var(--honey-deep)}
-  .logo svg{width:26px;height:26px;flex:none}
+  .logo svg{width:24px;height:24px;flex:none}
   .brand{display:flex;align-items:center;gap:0}
-  .head-partner{
-    display:flex;align-items:center;gap:0;
-    padding-left:0;white-space:nowrap;
-  }
-  .head-partner-sep{
-    font-family:"Unbounded",sans-serif;font-size:1.1rem;font-weight:700;
-    color:var(--honey-deep);padding:0 6px;
-  }
-  .head-partner-name{
-    font-family:"Unbounded",sans-serif;font-size:1.1rem;font-weight:700;
-    color:var(--pine);line-height:1.18;letter-spacing:.01em;
-  }
+  .brand-line{display:flex;align-items:baseline;gap:5px;white-space:nowrap}
+  .brand-name{font-family:"Unbounded",sans-serif;font-size:1.05rem;font-weight:700;color:var(--pine);white-space:nowrap}
+  .brand-slash{color:var(--honey-deep);font-weight:800;font-size:1.05rem}
+  .brand-partner{font-family:"Unbounded",sans-serif;font-size:1.05rem;font-weight:700;color:var(--pine-soft);white-space:nowrap}
   nav.main{display:flex;align-items:center;gap:22px}
   nav.main a{font-weight:600;font-size:.9rem;color:var(--wood);position:relative;padding-block:6px}
   nav.main a::after{
@@ -375,9 +367,8 @@
     .gal-grid .gal-item{height:auto;min-height:220px}
     .hero-tag{left:10px;bottom:14px}
     .brand{flex-direction:row;align-items:center;gap:0}
-    .head-partner{padding-left:0}
-    .head-partner-name{font-size:.92rem}
-    .head-partner-sep{font-size:.92rem;padding:0 5px}
+    .brand-line{gap:4px}
+    .brand-name,.brand-partner,.brand-slash{font-size:.82rem}
     .hero-btns .btn{width:100%}
     .contact-box{border-radius:22px}
     .calc-result .btn{align-self:stretch;justify-content:center}
@@ -398,9 +389,12 @@
     <div class="brand">
       <a class="logo" href="#top" aria-label="Amigo Group, на початок сторінки">
         <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#1e4032"/><path d="M16 5 L24 17 H20 L26 25 H6 L12 17 H8 Z" fill="#f3c87e"/><rect x="14.4" y="25" width="3.2" height="4" fill="#f3c87e"/></svg>
-        AMIGO<span class="dot">·</span>GROUP
       </a>
-      <span class="head-partner"><span class="head-partner-sep">·</span><span class="head-partner-name">Simba<span style="color:var(--honey-deep)">Bud</span></span></span>
+      <div class="brand-line">
+        <span class="brand-name">Amigo Group</span>
+        <span class="brand-slash">/</span>
+        <span class="brand-partner">SimbaBud</span>
+      </div>
     </div>
     <nav class="main" aria-label="Основне меню">
       <a href="#catalog">Вироби</a>
@@ -651,7 +645,7 @@
       </div>
     </div>
     <div class="foot-line">
-      <span>© 2025 Amigo Group · SimbaBud, село Нове</span>
+      <span>© 2025 Amigo Group / SimbaBud, село Нове</span>
       <span>Зроблено вручну, з любов'ю до дерева</span>
     </div>
   </div>
